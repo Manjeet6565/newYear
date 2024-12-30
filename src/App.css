@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #0072ff); /* Smooth gradient background */
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* Root Container */
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Input Fields */
+input[type="text"] {
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 15px 20px;
+  border: 2px solid #fff;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ff6f61; /* Highlight on focus */
+  box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+}
+
+/* Button Styles */
+button {
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #d65a4f;
+  transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Text Styling */
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Success Message Card */
+.success-card {
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+  color: #fff;
+}
+
+.success-card h3 {
+  color: #fff;
+}
+
+.success-card p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 576px) {
+  #root {
+    padding: 1rem; /* Reduced padding for mobile */
+  }
+
+  /* Heading Adjustments */
+  h1 {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+
+  /* Input Fields */
+  input[type="text"] {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  /* Button Adjustments */
+  button {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 25px;
+  }
+
+  /* Card Adjustments */
+  .card {
+    padding: 1.5rem;
+    margin: 10px 0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+
+  /* Full width for form elements */
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input[type="text"],
+  .input-group button {
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 10px;
+  }
+}
